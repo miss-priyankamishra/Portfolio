@@ -456,7 +456,7 @@ display: flex;
   }
 .Portfoli-container .portfolio-Box{
     /* background-color: rgba(196, 51, 51, 0.8); */
-    border: 1px solid #fca93dea;
+    border: 1px solid #fefefeea;
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -504,11 +504,13 @@ display: flex;
   overflow: hidden;
   width: 100%;
   height: 0;
-  transition: .5s ease;
+  /* transition: .5s ease; */
+  
 }
 
 .portfolio-Box:hover .Portfolio-layer {
   height: 100%;
+
 }
 
 .text-Fortfolio{  color: white;
@@ -934,5 +936,67 @@ body {
     padding: 5%;
      background-color: #007ced;
   }
+  .Portfoli-container .portfolio-Box{
+    width: 100%;
+    border: 2px  solid rgb(255, 255, 255);
+
+ }
+ .Portfoli-container .portfolio-Box img
+{
+  width: 400px;
+  transition: 5s ease;
+  opacity: 8.7;
+
+}
+.about-img img{
+display: none;
+}
+.Social-media ul li {
+  list-style: none;
+  margin: 0  20px 40px;
+   margin-top: 5rem;
+}
+.container .hero-pic{
+margin-bottom: 20px;
+ margin-top: -30px;
+}
+ .input-box input{
+width: 100%;
+}
+ .input-box textarea{
+   width: 100%;
+ }
 }
 
+@media (max-width: 480px) {
+ .Portfoli-container .portfolio-Box{
+    width: 100%;
+    border: 2px  solid rgb(255, 255, 255);
+
+ }
+ .Portfoli-container .portfolio-Box img
+{
+  width: 300px;
+  transition: 5s ease;
+  opacity: 8.7;
+
+}
+.about-img img{
+display: none;
+}
+.Social-media ul li {
+  list-style: none;
+  margin: 0 30px 20px 40px;
+   margin-top: 10rem;
+}
+.container .hero-pic{
+margin-bottom: 20px;
+ margin-top: -30px;
+}
+ .input-box input{
+width: 100%;
+}
+ .input-box textarea{
+   width: 100%;
+ }
+}
