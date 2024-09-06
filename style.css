@@ -478,7 +478,6 @@ display: flex;
 .Portfoli-container .portfolio-Box img
 {
   width: 100%;
-  transition: 5s ease;
   opacity: 8.7;
 
 }
@@ -944,8 +943,7 @@ body {
  .Portfoli-container .portfolio-Box img
 {
   width: 400px;
-  transition: 5s ease;
-  opacity: 8.7;
+    opacity: 8.7;
 
 }
 .about-img img{
@@ -977,7 +975,6 @@ width: 100%;
  .Portfoli-container .portfolio-Box img
 {
   width: 300px;
-  transition: 5s ease;
   opacity: 8.7;
 
 }
