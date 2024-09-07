@@ -1,22 +1,4 @@
-//  var toggleteben=document.querySelector(".toggleteben");
-//  var nav=document.querySelector (".navlink");
-//   var links=document.querySelector(".navlink li");
 
-//   toggleteben.addEventListener("click" , function(){
-//     this.classlist.toggle("click");
-//     nav.classList.toggle("open") ;
-//   })
-
-//    var typed=new Typed(".input" ,{
-// Strings:[" Frontend Developer"," UX Desginer","web Developer"],
-// typedspeed:70,
-// backspeed :55,
-// loop:true
-
-//    });
-// function myFunction() {
-//    alert("Hello! I am an alert box!");
-//  };
 const text = document.querySelector(".second-text");
 
  const textLoad = () => {
@@ -89,3 +71,29 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Button 
+
+// Select the toggle switch input
+const modeToggle = document.getElementById('modeToggle');
+
+// Function to switch between dark and light mode
+function toggleMode() {
+    // Check if the toggle is checked (true = dark mode)
+    if (modeToggle.checked) {
+        document.body.classList.remove('light-mode');
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.remove('dark-mode');
+        document.body.classList.add('light-mode');
+    }
+}
+
+// Add event listener to the toggle switch
+modeToggle.addEventListener('change', toggleMode);
+
+// Default to light mode on page load
+window.onload = () => {
+    document.body.classList.add('light-mode');
+};
+
