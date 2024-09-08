@@ -96,4 +96,34 @@ modeToggle.addEventListener('change', toggleMode);
 window.onload = () => {
     document.body.classList.add('dark-mode');
 };
+// skills
+
+window.addEventListener('load', () => {
+  // Function to animate the progress circle
+  function setProgress(percent, circle) {
+      const radius = circle.r.baseVal.value;
+      const circumference = 2 * Math.PI * radius;
+
+      // Set up the circle for animation
+      circle.style.strokeDasharray = `${circumference}`;
+      circle.style.strokeDashoffset = `${circumference}`;
+
+      // Animate the stroke-dashoffset to create the progress effect
+      const offset = circumference - (percent / 100) * circumference;
+      circle.style.strokeDashoffset = offset;
+  }
+
+  // Skills data and animation
+  const skills = [
+      { id: 'html-skill', percent: 100, color: '#FF5733' },
+      { id: 'css-skill', percent: 100, color: '#2980B9' },
+      { id: 'js-skill', percent: 80, color: '#F1C40F' },
+      { id: 'react-skill', percent: 75, color: '#61DAFB' }
+  ];
+
+  skills.forEach(skill => {
+      const circle = document.querySelector(`#${skill.id}`).previousElementSibling.querySelector('.progress-ring__circle');
+      setProgress(skill.percent, circle);
+  });
+});
 
