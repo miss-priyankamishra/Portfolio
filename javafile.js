@@ -94,6 +94,6 @@ modeToggle.addEventListener('change', toggleMode);
 
 // Default to light mode on page load
 window.onload = () => {
-    document.body.classList.add('light-mode');
+    document.body.classList.add('dark-mode');
 };
 
