@@ -118,7 +118,8 @@ window.addEventListener('load', () => {
       { id: 'html-skill', percent: 100, color: '#FF5733' },
       { id: 'css-skill', percent: 100, color: '#2980B9' },
       { id: 'js-skill', percent: 80, color: '#F1C40F' },
-      { id: 'react-skill', percent: 75, color: '#61DAFB' }
+      { id: 'react-skill', percent: 75, color: '#61DAFB' },
+     { id: 'Boostrap-skill', percent: 100, color: '#be07fa' }
   ];
 
   skills.forEach(skill => {
